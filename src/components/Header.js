@@ -18,7 +18,7 @@ const Header = () => {
                  <img src={NucampLogo} alt='nucamp Logo' className='float-start'/>
                  <h1 className='mt-1'>Nucamp</h1>
               </NavbarBrand>
-              <NavbarToggler onClick={() => setMenuOpen(!menuOpen)} />
+              <NavbarToggler onClick={() => setMenuOpen(!menuOpen)} aria-label='Toggle navigation'/>
               <Collapse isOpen={menuOpen}>
               <Nav className='ms-auto' navbar>
                     <NavItem>
