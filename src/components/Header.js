@@ -1,4 +1,5 @@
-import {Navbar, 
+import {
+        Navbar, 
         NavbarBrand,
         NavItem,
         Nav,
@@ -19,7 +20,7 @@ const Header = () => {
                  <h1 className='mt-1'>Nucamp</h1>
               </NavbarBrand>
               <NavbarToggler onClick={() => setMenuOpen(!menuOpen)} aria-label='Toggle navigation'/>
-              <Collapse isOpen={menuOpen}>
+              <Collapse isOpen={menuOpen} navbar>
               <Nav className='ms-auto' navbar>
                     <NavItem>
                         <NavLink className='nav-link' to='/'>
