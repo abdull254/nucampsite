@@ -1,5 +1,4 @@
 import { Routes, Route } from 'react-router-dom';
-import './App.css';
 import Header from './components/Header'
 import CampsiteDirectoryPage from './pages/CampsiteDirectoryPage';
 import Footer from './components/Footer';
@@ -7,7 +6,7 @@ import ContactPage from './pages/ContactPage';
 import HomePage from './pages/HomaPage';
 import AboutPage from './pages/AboutPage';
 import CampsiteDetailPage from './pages/CampsiteDetailPage';
-
+import './App.css';
 
 function App() {
   return (

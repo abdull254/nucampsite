@@ -17,11 +17,11 @@ export const selectAllCampsites = (state) => {
 }
 
 export const selectCampsiteById = (id) => (state) =>  {
-    return state.campsite.campsitesArray.find( 
+    return state.campsites.campsitesArray.find( 
         (campsite) => campsite.id === parseInt(id)
         );
 }
 
 export const selectFeaturedCampsite = (state) => {
-    return state.campsite.campsitesArray.find( (campsite) => campsite.featured);
-}
+    return state.campsites.campsitesArray.find((campsite) => campsite.featured);
+};
