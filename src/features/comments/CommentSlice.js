@@ -7,7 +7,18 @@ const initialState = {
 
 const commentsSlice = createSlice({
     name: 'comments',
-    initialState
+    initialState,
+    reducer: {
+        addComment: (state, action) => {
+            console.log("addComment action.payload", action.payload);
+            console.log("addComment state.commetnArray", state.commentsArray);
+            const newComment = {
+                id: state.commentsArray.length + 1,
+                ...action.payload
+            }
+            state.commentsArray.push(newComment);
+        }
+    }
 });
 
 export const commentsReducer = commentsSlice.reducer;
