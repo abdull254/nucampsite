@@ -27,9 +27,19 @@ const CommentForm = ({campsiteId}) => {
         setModalOpen(false)
     }
     return(
-        <Button>
-            Hell0
-        </Button>
+        <>
+            <Button onClick={() => setModalOpen(true)}>
+                <i className="fa fa-pencil fa-lg" /> Add Comment
+            </Button>
+            <Modal isOpen={modalOpen}>
+                <ModalHeader toggle={() => setModalOpen(false)}>
+                    Add Comment
+                </ModalHeader>
+                <ModalBody>
+                    campsite: {campsiteId}
+                </ModalBody>
+            </Modal>
+        </>
     )
 }
 
