@@ -1,7 +1,7 @@
 import { configureStore, getDefaultMiddleware } from '@reduxjs/toolkit';
 import logger from 'redux-logger';
 import { campsitesReducer } from '../features/campsites/CampsitesSlice';
-import { partnersReducer } from '../features/partners/partnersSlice';
+import { partnersReducer } from '../features/partners/PartnersSlice';
 import { promotionReducer } from '../features/promotion/PromotionSlice';
 import { commentsReducer } from '../features/comments/CommentSlice';
 import { userReducer } from '../features/user/userSlice';

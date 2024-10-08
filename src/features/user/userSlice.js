@@ -7,17 +7,15 @@ const initialState = {
 const userSlice = createSlice({
     name:'user',
     initialState,
-    reducer: {
-        setCurrentUser: (state, action) => {
-            return {
-                ...state, currentUser:action.payload 
-            }
-        }
+    reducers: {
+        setCurrentUser: (state, action) => ({
+                ...state, 
+                currentUser: action.payload 
+        })
     } 
 });
 
 export const userReducer = userSlice.reducer;
+export const { setCurrentUser }= userSlice.actions;
 
-export const selectCurrentUser = (state) => {
-    return state.user.currentUser
-}
+export const selectCurrentUser = (state) => state.user.currentUser;
